@@ -1,0 +1,20 @@
+{
+  "name": "findImports",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/babylon": "^6.16.1",
+    "@types/glob": "^5.0.30",
+    "@types/yargs": "^6.6.0",
+    "babylon": "^6.17.4",
+    "colors": "^1.1.2",
+    "globby": "^6.1.0",
+    "typescript": "^2.3.4",
+    "yargs": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/colors": "^1.1.3",
+    "@types/node": "^8.0.0"
+  }
+}
