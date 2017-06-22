@@ -11,8 +11,9 @@ const tsConfig: ts.CompilerOptions = {
   sourceMap: false,
   module: ts.ModuleKind.CommonJS
 };
-
-console.log(ts.transpile(`const lanNode: HTMLInputElement = <HTMLInputElement>document.getElementById("LanguageCode");`, tsConfig), 'eee')
+const transpileOptions: ts.TranspileOptions = {
+  compilerOptions: tsConfig
+}
 
 export function findImports(patterns: string | string[]) {
   console.log("begin", patterns);
@@ -21,11 +22,14 @@ export function findImports(patterns: string | string[]) {
 
   files.forEach(file => {
     let str = fs.readFileSync(file, "utf8");
+    if (/\.d\.ts$/.test(file)) { return }
+
     /**
          * ts tsx 支持
          */
     if (/tsx?$/.test(file)) {
-      str = ts.transpile(str, tsConfig);
+      const config: ts.TranspileOptions = {...transpileOptions, fileName: file };
+      str = ts.transpileModule(str, config).outputText;
       fs.writeFileSync(`${file}.ast.js`, str);
     }
 
