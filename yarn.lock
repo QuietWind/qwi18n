@@ -6,9 +6,9 @@
   version "6.7.16"
   resolved "http://registry.npm.taobao.org/@types/babel-types/download/@types/babel-types-6.7.16.tgz#e2602896636858a0067971f7ca4bb8678038293f"
 
-"@types/babylon@^6.16.1":
-  version "6.16.1"
-  resolved "http://registry.npm.taobao.org/@types/babylon/download/@types/babylon-6.16.1.tgz#e4d10ab9e43a73703a17c6f41438bede28769340"
+"@types/babylon@^6.16.2":
+  version "6.16.2"
+  resolved "https://registry.npmjs.org/@types/babylon/-/babylon-6.16.2.tgz#062ce63b693d9af1c246f5aedf928bc9c30589c8"
   dependencies:
     "@types/babel-types" "*"
 

@@ -1,10 +1,13 @@
 {
-  "name": "findImports",
+  "name": "webi18n",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "webi18n": "./bin/webi18n.js"
+  },
   "dependencies": {
-    "@types/babylon": "^6.16.1",
+    "@types/babylon": "^6.16.2",
     "@types/glob": "^5.0.30",
     "@types/yargs": "^6.6.0",
     "babylon": "^6.17.4",

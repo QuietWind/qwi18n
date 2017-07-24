@@ -1,3 +1,6 @@
+SHELL := /bin/bash
+export PATH := $(shell pwd)/node_modules/.bin:$(PATH)
+
 init:
 	yarn
 
