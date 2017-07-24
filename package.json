@@ -1,10 +1,10 @@
 {
-  "name": "webi18n",
+  "name": "qwi18n",
   "version": "1.0.1",
   "main": "./lib/index.js",
   "license": "MIT",
   "bin": {
-    "webi18n": "./bin/webi18n.js"
+    "qwi18n": "./bin/qwi18n.js"
   },
   "dependencies": {
     "@types/babylon": "^6.16.2",
