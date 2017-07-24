@@ -119,6 +119,7 @@ function findFileModules(
 
     if (item.modules.findIndex(ele => ele === modulePath) === -1) {
       item.modules.push(modulePath);
+      item.count += 1
       findFileModules(modulePath, item, options);
     }
   }
@@ -161,6 +162,11 @@ export function findImports(
       Imports.push(item);
     }
   });
+
+  fs.writeFileSync(
+    `${process.cwd()}/imports.json`,
+    JSON.stringify(Imports, null, 4)
+  );
 
   return Imports;
 }
