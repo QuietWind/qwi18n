@@ -1,7 +1,7 @@
 {
   "name": "webi18n",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "license": "MIT",
   "bin": {
     "webi18n": "./bin/webi18n.js"
